@@ -8,7 +8,7 @@
 	},
 	"license": "MIT",
 	"scripts": {
-		"clean": "git clean node_modules turbo",
+		"clean": "git clean node_modules .turbo",
 		"typecheck": "tsc --noEmit",
 		"lint": "eslint"
 	},
