@@ -1,0 +1,17 @@
+{
+    "name": "@sprout/tailwind-config",
+    "version": "0.1.0",
+    "private": true,
+    "type": "module",
+    "exports": {
+        "./web": "./web.ts"
+    },
+    "license": "MIT",
+    "scripts": {
+        "typecheck": "tsc --noEmit",
+        "lint": "eslint"
+    },
+    "dependencies": {
+        "tailwindcss": "catalog:"
+    }
+}
