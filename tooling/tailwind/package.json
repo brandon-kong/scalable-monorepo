@@ -4,15 +4,20 @@
 	"private": true,
 	"type": "module",
 	"exports": {
-		"./web": "./web.ts"
+		"./shared.css": "./dist/shared.css"
 	},
 	"license": "MIT",
 	"scripts": {
-		"clean": "git clean -xdf node_modules .turbo",
+		"dev": "tailwindcss -i shared.css -o dist/shared.css --watch",
+		"build": "tailwindcss -i shared.css -o dist/shared.css",
+		"clean": "git clean -xdf node_modules .turbo dist",
 		"typecheck": "tsc --noEmit",
 		"lint": "eslint"
 	},
 	"dependencies": {
 		"tailwindcss": "catalog:"
+	},
+	"devDependencies": {
+		"@tailwindcss/cli": "^4.1.4"
 	}
 }

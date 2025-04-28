@@ -12,7 +12,10 @@
 	},
 	"dependencies": {
 		"@core/ui": "workspace:*",
+		"@core/tailwind-config": "workspace:*",
+		"@tailwindcss/postcss": "catalog:",
 		"next": "^15.3.0",
+		"postcss": "catalog:",
 		"react": "catalog:react19",
 		"react-dom": "catalog:react19"
 	},
@@ -22,6 +25,7 @@
 		"@types/react": "catalog:react19",
 		"@types/react-dom": "catalog:react19",
 		"eslint": "^9.25.0",
+		"tailwindcss": "catalog:",
 		"typescript": "catalog:"
 	}
 }

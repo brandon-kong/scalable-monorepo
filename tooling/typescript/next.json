@@ -1,6 +1,6 @@
 {
 	"$schema": "https://json.schemastore.org/tsconfig",
-	"extends": "./base.json",
+	"extends": "./react.json",
 	"compilerOptions": {
 		"plugins": [{ "name": "next" }],
 		"module": "ESNext",

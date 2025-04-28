@@ -11,6 +11,7 @@
 		"check-types": "tsc --noEmit"
 	},
 	"dependencies": {
+		"@core/tailwind-config": "workspace:*",
 		"@core/ui": "workspace:*",
 		"next": "^15.3.0",
 		"react": "catalog:react19",
