@@ -21,9 +21,7 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en">
-            <body className={`${calSans.variable}`}>
-                {children}
-            </body>
+            <body className={`${calSans.variable}`}>{children}</body>
         </html>
     );
 }

@@ -3,15 +3,21 @@
 
 @theme {
     --content-max-width: 1200px;
+    --grid-border-color: #e1e2e3;
 }
 
 @layer base {
     body {
-        font-family: var(--font-cal-sans), ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+        font-family: var(--font-cal-sans), ui-serif, Georgia, Cambria,
+            "Times New Roman", Times, serif;
     }
 }
 
 @utility sprout-grid {
     display: grid;
-    grid-template-columns: 1fr [content-start] minmax(0,var(--content-max-width)) [content-end] 1fr
+    grid-template-columns: 1fr [content-start] minmax(
+            0,
+            var(--content-max-width)
+        ) [content-end] 1fr;
+    border-bottom: 1px solid var(--grid-border-color);
 }
