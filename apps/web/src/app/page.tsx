@@ -1,4 +1,5 @@
 import Typography from "@core/ui/Typography";
+import Test from "~/components/test";
 
 export default function Home() {
     return (

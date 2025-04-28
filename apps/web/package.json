@@ -9,7 +9,8 @@
 		"start": "next start",
 		"lint": "biome check .",
 		"check-types": "tsc --noEmit",
-		"format": "biome format --write"
+		"format": "biome format --write",
+		"clean": "git clean -xdf .cache .turbo node_modules .next"
 	},
 	"dependencies": {
 		"@core/ui": "workspace:*",
