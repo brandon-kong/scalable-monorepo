@@ -4,13 +4,9 @@ import localFont from "next/font/local";
 import "./globals.css";
 import "@core/tailwind-config/shared.css";
 
-const geistSans = localFont({
-    src: "./fonts/GeistVF.woff",
-    variable: "--font-geist-sans",
-});
-const geistMono = localFont({
-    src: "./fonts/GeistMonoVF.woff",
-    variable: "--font-geist-mono",
+const calSans = localFont({
+    src: "./fonts/CalSans.woff2",
+    variable: "--font-cal-sans",
 });
 
 export const metadata: Metadata = {
@@ -25,7 +21,7 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en">
-            <body className={`${geistSans.variable} ${geistMono.variable}`}>
+            <body className={`${calSans.variable}`}>
                 {children}
             </body>
         </html>

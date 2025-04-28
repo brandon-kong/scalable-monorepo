@@ -5,9 +5,11 @@
 		}
 	],
 	"tailwindCSS.experimental.configFile": {
-		"tooling/tailwind/shared.css": ["apps/**"]
+		"tooling/tailwind/shared.css": [
+			"apps/**",
+			"packages/ui/**"
+		],
+		"apps/web/src/app/globals.css": "apps/web/src/**"
 	},
-	"tailwindCSS.experimental.classRegex": [
-		["cva\\(([^)]*)\\)", "[\"'`]([^\"'`]*).*?[\"'`]"]
-	]
+	"tailwindCSS.classFunctions": ["cva", "cx"]
 }
