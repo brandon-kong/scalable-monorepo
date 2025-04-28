@@ -4,4 +4,7 @@
 			"mode": "auto"
 		}
 	],
+	"tailwindCSS.experimental.configFile": {
+		"tooling/tailwind/shared.css": ["apps/**"]
+	}
 }
