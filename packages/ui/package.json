@@ -7,10 +7,13 @@
 	},
 	"scripts": {
 		"clean": "git clean -xdf node_modules .turbo",
+		"format": "biome format --write",
 		"generate:component": "turbo gen react-component",
 		"check-types": "tsc --noEmit"
 	},
 	"devDependencies": {
+		"@biomejs/biome": "catalog:",
+		"@core/biome-config": "workspace:*",
 		"@core/tsconfig": "workspace:*",
 		"@turbo/gen": "^2.5.0",
 		"@types/node": "^22.14.0",

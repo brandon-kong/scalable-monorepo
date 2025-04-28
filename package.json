@@ -7,7 +7,7 @@
 		"lint": "turbo run lint",
 		"clean": "turbo run clean",
 		"check-types": "turbo run check-types",
-		"format": "biome format --write"
+		"format": "turbo run format"
 	},
 	"devDependencies": {
 		"@core/biome-config": "workspace:*",
