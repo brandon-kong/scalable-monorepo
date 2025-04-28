@@ -8,7 +8,9 @@
             "*.json",
             "tsconfig.json",
             ".turbo",
-            ".next"
+            ".next",
+            ".cache",
+            "dist/*"
         ]
     },
 
