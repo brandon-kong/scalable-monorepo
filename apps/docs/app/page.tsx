@@ -1,9 +1,3 @@
 export default function Home() {
-    return (
-       <div
-       className={''}
-       >
-            Test
-       </div>
-    );
+    return <div className={""}>Test</div>;
 }

@@ -1,5 +1,5 @@
 {
-	"name": "sprout",
+	"name": "scalable-monorepo",
 	"version": "0.0.0",
 	"private": true,
 	"scripts": {

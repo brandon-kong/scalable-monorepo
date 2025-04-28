@@ -1,9 +1,5 @@
 {
-	"eslint.workingDirectories": [
-		{
-			"mode": "auto"
-		}
-	],
+	"editor.defaultFormatter": "biomejs.biome",
 	"tailwindCSS.experimental.configFile": {
 		"tooling/tailwind/shared.css": [
 			"apps/**",
@@ -11,5 +7,8 @@
 		],
 		"apps/web/src/app/globals.css": "apps/web/src/**"
 	},
-	"tailwindCSS.classFunctions": ["cva", "cx"]
+	"tailwindCSS.classFunctions": [
+		"cva",
+		"cx"
+	]
 }
