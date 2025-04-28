@@ -8,7 +8,8 @@
 		"build": "next build",
 		"start": "next start",
 		"lint": "next lint --max-warnings 0",
-		"check-types": "tsc --noEmit"
+		"check-types": "tsc --noEmit",
+		"format": "biome format --write"
 	},
 	"dependencies": {
 		"@core/ui": "workspace:*",
@@ -20,7 +21,9 @@
 		"react-dom": "catalog:react19"
 	},
 	"devDependencies": {
+		"@core/biome-config": "workspace:*",
 		"@core/tsconfig": "workspace:*",
+		"@biomejs/biome": "catalog:",
 		"@types/node": "^22.14.0",
 		"@types/react": "catalog:react19",
 		"@types/react-dom": "catalog:react19",

@@ -113,6 +113,12 @@ importers:
         specifier: catalog:react19
         version: 19.1.0(react@19.1.0)
     devDependencies:
+      '@biomejs/biome':
+        specifier: 'catalog:'
+        version: 1.9.4
+      '@core/biome-config':
+        specifier: workspace:*
+        version: link:../../tooling/biome
       '@core/tsconfig':
         specifier: workspace:*
         version: link:../../tooling/typescript
