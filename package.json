@@ -5,11 +5,12 @@
 		"build": "turbo run build",
 		"dev": "turbo run dev",
 		"lint": "turbo run lint",
-		"format": "biome format --write .",
+		"format": "biome format --write",
 		"check-types": "turbo run check-types"
 	},
 	"devDependencies": {
-		"@biomejs/biome": "^1.9.4",
+		"@core/biome-config": "workspace:*",
+		"@biomejs/biome": "catalog:",
 		"prettier": "^3.5.3",
 		"turbo": "^2.5.2",
 		"typescript": "5.8.2"

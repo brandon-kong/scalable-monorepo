@@ -1,0 +1,41 @@
+{
+    "$schema": "https://biomejs.dev/schemas/1.9.4/schema.json",
+
+    "files": {
+        "ignore": [
+            "node_modules/*",
+            "*.config.*",
+            "*.json",
+            "tsconfig.json",
+            ".turbo",
+            ".next"
+        ]
+    },
+
+    "organizeImports": {
+        "enabled": true
+    },
+
+    "linter": {
+        "enabled": true,
+        "rules": {
+            "recommended": true,
+            "complexity": {
+                "noForEach": "off",
+                "noUselessFragments": "off"
+            },
+            "correctness": {
+                "useExhaustiveDependencies": "off"
+            },
+            "suspicious": {
+                "noExplicitAny": "off"
+            }
+        }
+    },
+
+    "formatter": {
+        "enabled": true,
+        "indentWidth": 4,
+        "indentStyle": "space"
+    }
+}
