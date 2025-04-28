@@ -1,9 +1,13 @@
-import { Button } from "@core/ui/button";
+import Typography from "@core/ui/Typography";
 
 export default function Home() {
     return (
-        <div className={"bg-background"}>
-            <Button className={"p-8"}>Test</Button>
+        <div className={"bg-background h-screen"}>
+            <Typography
+            variant={'h1'}
+            >
+                TEST
+            </Typography>
         </div>
     );
 }
