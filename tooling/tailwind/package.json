@@ -12,12 +12,14 @@
 		"build": "tailwindcss -i shared.css -o dist/shared.css",
 		"clean": "git clean -xdf node_modules .turbo dist",
 		"typecheck": "tsc --noEmit",
-		"lint": "eslint"
+		"format": "biome format --write"
 	},
 	"dependencies": {
 		"tailwindcss": "catalog:"
 	},
 	"devDependencies": {
+		"@core/biome-config": "workspace:",
+		"@biomejs/biome": "catalog:",
 		"@tailwindcss/cli": "^4.1.4"
 	}
 }
