@@ -16,6 +16,7 @@
 		"@core/ui": "workspace:*",
 		"@core/tailwind-config": "workspace:*",
 		"@tailwindcss/postcss": "catalog:",
+		"zod": "catalog:",
 		"next": "^15.3.0",
 		"postcss": "catalog:",
 		"react": "catalog:react19",
