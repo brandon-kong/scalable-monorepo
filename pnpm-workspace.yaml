@@ -2,11 +2,20 @@ packages:
   - apps/*
   - packages/*
   - tooling/*
+  
 catalog:
+  # Developer tooling
   "@biomejs/biome": ^1.9.4
-
   tailwindcss: ^4.1.4
   typescript: ^5.8.3
+
+catalogs:
+  react19:
+    react: ^19.1.0
+    react-dom: ^19.1.0
+    "@types/react": ^19.1.2
+    "@types/react-dom": ^19.1.2
+
 onlyBuiltDependencies:
   - core-js-pure
   - sharp
