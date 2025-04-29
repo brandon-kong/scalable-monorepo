@@ -53,7 +53,7 @@ model User {
   sessions      Session[]
 }
 
-model VerificationRequest {
+model VerificationToken {
   id         String   @id @default(cuid())
   identifier String
   token      String   @unique

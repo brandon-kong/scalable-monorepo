@@ -6,10 +6,12 @@ import Nodemailer from "next-auth/providers/nodemailer";
 
 export const baseAuthConfig = {
     secret: env.AUTH_SECRET,
-    providers: [Nodemailer({
-        server: env.EMAIL_SERVER,
-        from: env.EMAIL_FROM,
-    })],
+    providers: [
+        Nodemailer({
+            server: env.EMAIL_SERVER,
+            from: env.EMAIL_FROM,
+        })
+    ],
     callbacks: {},
 } satisfies NextAuthConfig;
 
