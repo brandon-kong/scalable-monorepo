@@ -20,7 +20,6 @@
 		"@types/node": "^22.14.0",
 		"@types/react": "catalog:react19",
 		"@types/react-dom": "catalog:react19",
-		"eslint": "^9.25.0",
 		"typescript": "5.8.2"
 	},
 	"dependencies": {
