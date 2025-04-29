@@ -8,6 +8,10 @@ export const env = createEnv({
         // Email Provider
         EMAIL_SERVER: zod.string().url().nonempty(),
         EMAIL_FROM: zod.string().email().nonempty(),
+
+        // Google Provider
+        GOOGLE_CLIENT_ID: zod.string().nonempty(),
+        GOOGLE_CLIENT_SECRET: zod.string().nonempty(),
     },
 
     experimental__runtimeEnv: {},
