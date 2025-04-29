@@ -10,5 +10,11 @@
 	"tailwindCSS.classFunctions": [
 		"cva",
 		"cx"
-	]
+	],
+	"github.copilot.enable": {
+		"*": false,
+		"plaintext": false,
+		"markdown": false,
+		"scminput": false
+	}
 }
