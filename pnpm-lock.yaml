@@ -106,6 +106,9 @@ importers:
 
   apps/web:
     dependencies:
+      '@core/auth':
+        specifier: workspace:*
+        version: link:../../packages/auth
       '@core/tailwind-config':
         specifier: workspace:*
         version: link:../../tooling/tailwind

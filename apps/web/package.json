@@ -13,6 +13,7 @@
 		"clean": "git clean -xdf .cache .turbo node_modules .next"
 	},
 	"dependencies": {
+		"@core/auth": "workspace:*",
 		"@core/tailwind-config": "workspace:*",
 		"@core/ui": "workspace:*",
 		"@t3-oss/env-nextjs": "catalog:",
