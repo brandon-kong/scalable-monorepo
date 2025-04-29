@@ -9,6 +9,7 @@
 		"./env": "./env.ts"
 	},
 	"scripts": {
+		"dev": "pnpm db:generate --watch",
 		"db:migrate": "prisma migrate dev",
 		"db:generate": "prisma generate --no-hints",
 		"db:push": "prisma db push",
@@ -16,28 +17,25 @@
 		"format": "biome format --write . && prisma format",
 		"lint": "biome check . --write",
 		"check-types": "tsc --noEmit",
+		"depcheck": "depcheck --ignores=\"@core/biome-config,@prisma/client\"",
 		"postinstall": "pnpm db:generate"
 	},
 	"devDependencies": {
 		"@biomejs/biome": "catalog:",
 		"@core/biome-config": "workspace:*",
 		"@core/tsconfig": "workspace:*",
-		"@tailwindcss/postcss": "catalog:",
-		"@types/node": "^22.14.0",
 		"@types/pg": "^8.11.14",
-		"@types/react": "catalog:react19",
-		"@types/react-dom": "catalog:react19",
+		"depcheck": "catalog:",
 		"prisma": "^6.6.0",
 		"typescript": "5.8.2"
 	},
 	"dependencies": {
 		"@prisma/client": "6.6.0",
 		"@t3-oss/env-nextjs": "catalog:",
-		"next-auth": "catalog:",
 		"kysely": "catalog:",
+		"next-auth": "catalog:",
 		"pg": "catalog:",
 		"react": "catalog:react19",
-		"react-dom": "catalog:react19",
 		"zod": "catalog:"
 	}
 }

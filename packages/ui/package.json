@@ -10,23 +10,21 @@
 		"format": "biome format --write .",
 		"lint": "biome check . --write",
 		"generate:component": "turbo gen react-component",
-		"check-types": "tsc --noEmit"
+		"check-types": "tsc --noEmit",
+		"depcheck": "depcheck --ignores=\"@core/biome-config,@tailwindcss/postcss\""
 	},
 	"devDependencies": {
 		"@biomejs/biome": "catalog:",
 		"@core/biome-config": "workspace:*",
 		"@core/tsconfig": "workspace:*",
 		"@turbo/gen": "^2.5.0",
-		"@types/node": "^22.14.0",
-		"@types/react": "catalog:react19",
-		"@types/react-dom": "catalog:react19",
+		"depcheck": "catalog:",
 		"typescript": "5.8.2"
 	},
 	"dependencies": {
 		"@tailwindcss/postcss": "catalog:",
 		"class-variance-authority": "^0.7.1",
 		"react": "catalog:react19",
-		"react-dom": "catalog:react19",
 		"tailwind-merge": "^3.2.0"
 	}
 }

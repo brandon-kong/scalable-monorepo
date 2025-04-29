@@ -16,15 +16,13 @@
 		"format": "biome format --write",
 		"lint": "biome check . --write",
 		"check-types": "tsc --noEmit",
-		"depcheck": "depcheck"
+		"depcheck": "depcheck --ignores=\"@core/biome-config\""
 	},
 	"devDependencies": {
 		"@biomejs/biome": "catalog:",
 		"@core/biome-config": "workspace:*",
 		"@core/tsconfig": "workspace:*",
-		"@types/node": "^22.14.0",
 		"@types/react": "catalog:react19",
-		"@types/react-dom": "catalog:react19",
 		"depcheck": "catalog:",
 		"typescript": "5.8.2"
 	},
