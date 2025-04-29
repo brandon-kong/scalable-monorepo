@@ -3,7 +3,7 @@ import zod from "zod";
 
 export const env = createEnv({
     server: {
-        AUTH_SECRET: zod.string().min(8)
+        AUTH_SECRET: zod.string().min(8),
     },
 
     experimental__runtimeEnv: {},

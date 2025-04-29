@@ -2,8 +2,11 @@
 	"name": "@core/auth",
 	"version": "0.0.0",
 	"private": true,
+	"type": "module",
 	"exports": {
-		"./*": "./src/*.tsx",
+		".": {
+			"default": "./src/index.ts"
+		},
         "./env": "./env.ts"
 	},
 	"scripts": {
@@ -24,6 +27,7 @@
 	},
 	"dependencies": {
         "@t3-oss/env-nextjs": "catalog:",
+		"next-auth": "catalog:",
         "zod": "catalog:",
 		"react": "catalog:react19",
 		"react-dom": "catalog:react19"

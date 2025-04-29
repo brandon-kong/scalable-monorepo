@@ -11,13 +11,13 @@
 		"format": "turbo run format"
 	},
 	"devDependencies": {
-		"@core/biome-config": "workspace:*",
 		"@biomejs/biome": "catalog:",
+		"@core/biome-config": "workspace:*",
 		"prettier": "^3.5.3",
 		"turbo": "^2.5.2",
 		"typescript": "5.8.2"
 	},
-	"packageManager": "pnpm@10.6.1",
+	"packageManager": "pnpm@10.10.0",
 	"engines": {
 		"node": ">=18"
 	}
