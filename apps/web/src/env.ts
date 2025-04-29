@@ -5,7 +5,9 @@ import zod from "zod";
 export const env = createEnv({
     extends: [vercel()],
     shared: {
-        NODE_ENV: zod.enum(["development", "production", "test"]).default("development"),
+        NODE_ENV: zod
+            .enum(["development", "production", "test"])
+            .default("development"),
     },
 
     server: {},
@@ -13,6 +15,5 @@ export const env = createEnv({
 
     experimental__runtimeEnv: {
         NODE_ENV: process.env.NODE_ENV,
-    }
+    },
 });
-
