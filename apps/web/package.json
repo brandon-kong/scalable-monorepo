@@ -7,7 +7,7 @@
 		"dev": "next dev --turbopack --port 3000",
 		"build": "next build",
 		"start": "next start",
-		"lint": "biome check .",
+		"lint": "biome check . --write",
 		"check-types": "tsc --noEmit",
 		"format": "biome format --write",
 		"clean": "git clean -xdf .cache .turbo node_modules .next"
