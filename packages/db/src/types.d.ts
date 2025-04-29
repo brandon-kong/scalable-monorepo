@@ -12,9 +12,4 @@ export interface Database {
     VerificationRequest: VerificationRequest;
 }
 
-export type {
-    Account,
-    Session,
-    User,
-    VerificationRequest,
-}
+export type { Account, Session, User, VerificationRequest };
