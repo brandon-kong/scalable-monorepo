@@ -317,6 +317,9 @@ importers:
       '@turbo/gen':
         specifier: ^2.5.0
         version: 2.5.0(@types/node@22.14.0)(typescript@5.8.2)
+      '@types/react':
+        specifier: catalog:react19
+        version: 19.1.2
       depcheck:
         specifier: 'catalog:'
         version: 1.4.7
