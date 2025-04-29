@@ -10,6 +10,7 @@
 	},
 	"scripts": {
 		"db:migrate": "prisma migrate dev",
+		"db:generate": "prisma generate",
 		"db:push": "prisma db push",
 		"clean": "git clean -xdf node_modules .turbo .cache",
 		"format": "biome format --write .",
@@ -30,6 +31,7 @@
 		"typescript": "5.8.2"
 	},
 	"dependencies": {
+		"@prisma/client": "6.6.0",
 		"@t3-oss/env-nextjs": "catalog:",
 		"kysely": "^0.28.2",
 		"pg": "^8.15.6",
