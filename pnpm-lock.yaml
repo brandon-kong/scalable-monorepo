@@ -182,6 +182,9 @@ importers:
 
   packages/auth:
     dependencies:
+      '@auth/kysely-adapter':
+        specifier: ^1.9.0
+        version: 1.9.0(kysely@0.28.2)(nodemailer@6.10.1)
       '@t3-oss/env-nextjs':
         specifier: 'catalog:'
         version: 0.13.0(arktype@2.1.20)(typescript@5.8.2)(zod@3.24.3)
@@ -369,6 +372,11 @@ packages:
         optional: true
       nodemailer:
         optional: true
+
+  '@auth/kysely-adapter@1.9.0':
+    resolution: {integrity: sha512-Vcc/Q2E/MveyqrN5mHr24Ev/yOBR30HfkAPDgLtPwEhZWEoug9RPNdomcKZA4tUxwI4U5GOD+dmPOyyPCEOPGw==}
+    peerDependencies:
+      kysely: ^0.27.5
 
   '@babel/runtime-corejs3@7.27.0':
     resolution: {integrity: sha512-UWjX6t+v+0ckwZ50Y5ShZLnlk95pP5MyW/pon9tiYzl3+18pkTHTFNTKr7rQbfRXPkowt2QAn30o1b6oswszew==}
@@ -2296,6 +2304,15 @@ snapshots:
       preact-render-to-string: 6.5.11(preact@10.24.3)
     optionalDependencies:
       nodemailer: 6.10.1
+
+  '@auth/kysely-adapter@1.9.0(kysely@0.28.2)(nodemailer@6.10.1)':
+    dependencies:
+      '@auth/core': 0.39.0(nodemailer@6.10.1)
+      kysely: 0.28.2
+    transitivePeerDependencies:
+      - '@simplewebauthn/browser'
+      - '@simplewebauthn/server'
+      - nodemailer
 
   '@babel/runtime-corejs3@7.27.0':
     dependencies:
