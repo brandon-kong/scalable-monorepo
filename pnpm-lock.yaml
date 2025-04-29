@@ -109,6 +109,9 @@ importers:
       '@core/auth':
         specifier: workspace:*
         version: link:../../packages/auth
+      '@core/db':
+        specifier: workspace:*
+        version: link:../../packages/db
       '@core/tailwind-config':
         specifier: workspace:*
         version: link:../../tooling/tailwind
