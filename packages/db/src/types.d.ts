@@ -1,9 +1,14 @@
+import type { AdapterUser, AdapterAccount } from "next-auth/adapters";
+
 import type {
-    Account,
+    Account as dbAccount,
+    User as dbUser,
     Session,
-    User,
     VerificationToken,
 } from "../generated/prisma";
+
+interface User extends AdapterUser, dbUser {}
+interface Account extends AdapterAccount, dbAccount {}
 
 export interface Database {
     User: User;

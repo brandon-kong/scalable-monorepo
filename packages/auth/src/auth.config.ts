@@ -1,9 +1,9 @@
 import { type NextAuthConfig } from "next-auth";
 import { baseAuthConfig } from "./base.config";
-import { KyselyAdapter } from "@auth/kysely-adapter";
+import { KyselyAdapter } from "./kysely-adapter";
 import { db } from "@core/db";
 
 export const authConfig = {
-    adapter: KyselyAdapter(db as any),
+    adapter: KyselyAdapter(db),
     ...baseAuthConfig,
 } satisfies NextAuthConfig
