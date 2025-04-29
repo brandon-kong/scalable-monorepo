@@ -10,13 +10,13 @@
 	},
 	"scripts": {
 		"db:migrate": "prisma migrate dev",
-		"db:generate": "prisma generate",
+		"db:generate": "prisma generate --no-hints",
 		"db:push": "prisma db push",
 		"clean": "git clean -xdf node_modules .turbo .cache generated",
 		"format": "biome format --write .",
 		"lint": "biome check . --write",
 		"check-types": "tsc --noEmit",
-		"postinstall": "prisma generate"
+		"postinstall": "pnpm db:generate"
 	},
 	"devDependencies": {
 		"@biomejs/biome": "catalog:",
