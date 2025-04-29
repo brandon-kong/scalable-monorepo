@@ -1,0 +1,31 @@
+{
+	"name": "@core/auth",
+	"version": "0.0.0",
+	"private": true,
+	"exports": {
+		"./*": "./src/*.tsx",
+        "./env": "./env.ts"
+	},
+	"scripts": {
+		"clean": "git clean -xdf node_modules .turbo .cache",
+		"format": "biome format --write",
+		"lint": "biome check .",
+		"check-types": "tsc --noEmit"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "catalog:",
+		"@core/biome-config": "workspace:*",
+		"@core/tsconfig": "workspace:*",
+        "@tailwindcss/postcss": "catalog:",
+		"@types/node": "^22.14.0",
+		"@types/react": "catalog:react19",
+		"@types/react-dom": "catalog:react19",
+		"typescript": "5.8.2"
+	},
+	"dependencies": {
+        "@t3-oss/env-nextjs": "catalog:",
+        "zod": "catalog:",
+		"react": "catalog:react19",
+		"react-dom": "catalog:react19"
+	}
+}

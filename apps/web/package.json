@@ -13,23 +13,25 @@
 		"clean": "git clean -xdf .cache .turbo node_modules .next"
 	},
 	"dependencies": {
-		"@core/ui": "workspace:*",
 		"@core/tailwind-config": "workspace:*",
+		"@core/ui": "workspace:*",
+		"@t3-oss/env-nextjs": "catalog:",
 		"@tailwindcss/postcss": "catalog:",
-		"zod": "catalog:",
 		"next": "^15.3.0",
 		"postcss": "catalog:",
 		"react": "catalog:react19",
-		"react-dom": "catalog:react19"
+		"react-dom": "catalog:react19",
+		"zod": "catalog:"
 	},
 	"devDependencies": {
+		"@biomejs/biome": "catalog:",
 		"@core/biome-config": "workspace:*",
 		"@core/tsconfig": "workspace:*",
-		"@biomejs/biome": "catalog:",
 		"@types/node": "^22.14.0",
 		"@types/react": "catalog:react19",
 		"@types/react-dom": "catalog:react19",
 		"eslint": "^9.25.0",
+		"jiti": "catalog:",
 		"tailwindcss": "catalog:",
 		"typescript": "catalog:"
 	}

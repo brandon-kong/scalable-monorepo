@@ -11,7 +11,9 @@ catalog:
   tailwindcss: ^4.1.4
 
   # Misc
+  "@t3-oss/env-nextjs": ^0.13.0
   zod: ^3.24.3
+  jiti: ^2.4.2
 catalogs:
   react19:
     react: ^19.1.0
