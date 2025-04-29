@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
+import { Inter } from "next/font/google";
 
 import "./globals.css";
 import "@core/tailwind-config/shared.css";
@@ -7,6 +8,11 @@ import "@core/tailwind-config/shared.css";
 const calSans = localFont({
     src: "./fonts/CalSans.woff2",
     variable: "--font-cal-sans",
+});
+
+const inter = Inter({
+    subsets: ["latin"],
+    variable: "--font-inter",
 });
 
 export const metadata: Metadata = {
@@ -21,7 +27,9 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en">
-            <body className={`${calSans.variable}`}>{children}</body>
+            <body className={`${calSans.variable} ${inter.variable}`}>
+                {children}
+            </body>
         </html>
     );
 }
