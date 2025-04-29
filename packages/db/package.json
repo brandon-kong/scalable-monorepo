@@ -3,29 +3,38 @@
 	"version": "0.0.0",
 	"private": true,
 	"exports": {
-		"./*": "./src/*.tsx",
-        "./env": "./env.ts"
+		".": {
+			"default": "./index.ts"
+		},
+		"./env": "./env.ts"
 	},
 	"scripts": {
+		"db:migrate": "prisma migrate dev",
+		"db:push": "prisma db push",
 		"clean": "git clean -xdf node_modules .turbo .cache",
 		"format": "biome format --write .",
 		"lint": "biome check . --write",
-		"check-types": "tsc --noEmit"
+		"check-types": "tsc --noEmit",
+		"postinstall": "prisma generate"
 	},
 	"devDependencies": {
 		"@biomejs/biome": "catalog:",
 		"@core/biome-config": "workspace:*",
 		"@core/tsconfig": "workspace:*",
-        "@tailwindcss/postcss": "catalog:",
+		"@tailwindcss/postcss": "catalog:",
 		"@types/node": "^22.14.0",
+		"@types/pg": "^8.11.14",
 		"@types/react": "catalog:react19",
 		"@types/react-dom": "catalog:react19",
+		"prisma": "^6.6.0",
 		"typescript": "5.8.2"
 	},
 	"dependencies": {
-        "@t3-oss/env-nextjs": "catalog:",
-        "zod": "catalog:",
+		"@t3-oss/env-nextjs": "catalog:",
+		"kysely": "^0.28.2",
+		"pg": "^8.15.6",
 		"react": "catalog:react19",
-		"react-dom": "catalog:react19"
+		"react-dom": "catalog:react19",
+		"zod": "catalog:"
 	}
 }

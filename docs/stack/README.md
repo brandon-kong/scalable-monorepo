@@ -50,6 +50,12 @@ I've also been using Tailwind CSS for a while, and I love how easy it is to go f
 
 ## Backend
 
+### Prisma
+
+### Kysely
+
+### NextAuth
+
 ### NestJS
 
 This is my first time using NestJS, but I like the way it handles routing and the modularity of the framework. I also like the way it handles dependency injection and the way it integrates with TypeScript.
@@ -60,3 +66,6 @@ This is my first time using NestJS, but I like the way it handles routing and th
 
 I've used ESLint/Prettier for a while, but I wanted to try something better and more robust. Biome is a relatively new tool that combines linters and formatters. I like that it integrates nicely with Turborepo and has a fast linting/formatting process. It also has a nice UI for viewing linting errors and warnings.
 
+### Jiti
+
+I've never heard of Jiti before, but I found it from the T3 stack. It lets you asynchronously import typescript files. I'm using it to import the environment variable validation in each of my apps that require environment variables.
