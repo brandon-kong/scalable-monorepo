@@ -3,7 +3,7 @@ import zod from "zod";
 
 export const env = createEnv({
     server: {
-        TEST: zod.string().nonempty(),
+        DATABASE_URL: zod.string().url().nonempty()
     },
 
     experimental__runtimeEnv: {},
