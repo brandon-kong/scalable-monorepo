@@ -16,7 +16,7 @@ export default function Home() {
                     >
                         The better way to schedule your meetings
                     </Typography>
-                    <ProtectedRoute>
+                    <ProtectedRoute redirect={false}>
                         <Typography>
                             Welcome to the protected section of the application.
                             Only authorized users can see this content.
