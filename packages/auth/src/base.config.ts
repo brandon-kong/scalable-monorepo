@@ -12,6 +12,5 @@ export const baseAuthConfig = {
             from: env.EMAIL_FROM,
         })
     ],
-    callbacks: {},
 } satisfies NextAuthConfig;
 
