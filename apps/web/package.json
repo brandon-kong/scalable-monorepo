@@ -20,6 +20,7 @@
 		"@core/ui": "workspace:*",
 		"@t3-oss/env-nextjs": "catalog:",
 		"@tailwindcss/postcss": "catalog:",
+		"next-auth": "catalog:",
 		"pg": "catalog:",
 		"next": "catalog:",
 		"postcss": "catalog:",
