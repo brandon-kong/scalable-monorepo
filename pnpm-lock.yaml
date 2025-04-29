@@ -18,6 +18,9 @@ catalogs:
     jiti:
       specifier: ^2.4.2
       version: 2.4.2
+    kysely:
+      specifier: ^0.28.2
+      version: 0.28.2
     next-auth:
       specifier: ^5.0.0-beta
       version: 5.0.0-beta.27
@@ -182,12 +185,21 @@ importers:
 
   packages/auth:
     dependencies:
+      '@auth/core':
+        specifier: ^0.39.0
+        version: 0.39.0(nodemailer@6.10.1)
       '@auth/kysely-adapter':
         specifier: ^1.9.0
         version: 1.9.0(kysely@0.28.2)(nodemailer@6.10.1)
+      '@core/db':
+        specifier: workspace:*
+        version: link:../db
       '@t3-oss/env-nextjs':
         specifier: 'catalog:'
         version: 0.13.0(arktype@2.1.20)(typescript@5.8.2)(zod@3.24.3)
+      kysely:
+        specifier: 'catalog:'
+        version: 0.28.2
       next-auth:
         specifier: 'catalog:'
         version: 5.0.0-beta.27(next@15.3.0(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(nodemailer@6.10.1)(react@19.1.0)
@@ -238,7 +250,7 @@ importers:
         specifier: 'catalog:'
         version: 0.13.0(arktype@2.1.20)(typescript@5.8.2)(zod@3.24.3)
       kysely:
-        specifier: ^0.28.2
+        specifier: 'catalog:'
         version: 0.28.2
       pg:
         specifier: 'catalog:'

@@ -33,7 +33,7 @@
 	"dependencies": {
 		"@prisma/client": "6.6.0",
 		"@t3-oss/env-nextjs": "catalog:",
-		"kysely": "^0.28.2",
+		"kysely": "catalog:",
 		"pg": "catalog:",
 		"react": "catalog:react19",
 		"react-dom": "catalog:react19",
