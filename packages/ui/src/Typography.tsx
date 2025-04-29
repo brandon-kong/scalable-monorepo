@@ -1,7 +1,7 @@
 import { type VariantProps, cva } from "class-variance-authority";
 import { twMerge } from "tailwind-merge";
 
-const typographyVariants = cva("font-(--font-cal-sans)", {
+const typographyVariants = cva("", {
     variants: {
         variant: {
             h1: "scroll-m-20 font-semibold leading-none tracking-normal text-6xl text-balance",

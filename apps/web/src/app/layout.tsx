@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
-import localFont from "next/font/local";
 import { Inter } from "next/font/google";
+import localFont from "next/font/local";
 
 import "./globals.css";
 import "@core/tailwind-config/shared.css";
