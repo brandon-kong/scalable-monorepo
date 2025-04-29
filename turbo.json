@@ -28,6 +28,9 @@
 		},
 		"db:push": {
 			"dependsOn": ["^db:push"]
+		},
+		"db:generate": {
+			"dependsOn": ["^db:generate"]
 		}
 	}
 }
