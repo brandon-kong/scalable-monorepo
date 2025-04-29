@@ -4,6 +4,10 @@ import zod from "zod";
 export const env = createEnv({
     server: {
         AUTH_SECRET: zod.string().min(8),
+
+        // Email Provider
+        EMAIL_SERVER: zod.string().url().nonempty(),
+        EMAIL_FROM: zod.string().email().nonempty(),
     },
 
     experimental__runtimeEnv: {},

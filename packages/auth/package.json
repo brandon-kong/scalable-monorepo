@@ -7,7 +7,7 @@
 		".": {
 			"default": "./src/index.ts"
 		},
-        "./env": "./env.ts"
+		"./env": "./env.ts"
 	},
 	"scripts": {
 		"clean": "git clean -xdf node_modules .turbo .cache",
@@ -19,17 +19,18 @@
 		"@biomejs/biome": "catalog:",
 		"@core/biome-config": "workspace:*",
 		"@core/tsconfig": "workspace:*",
-        "@tailwindcss/postcss": "catalog:",
+		"@tailwindcss/postcss": "catalog:",
 		"@types/node": "^22.14.0",
 		"@types/react": "catalog:react19",
 		"@types/react-dom": "catalog:react19",
 		"typescript": "5.8.2"
 	},
 	"dependencies": {
-        "@t3-oss/env-nextjs": "catalog:",
+		"@t3-oss/env-nextjs": "catalog:",
 		"next-auth": "catalog:",
-        "zod": "catalog:",
+		"nodemailer": "^6.10.1",
 		"react": "catalog:react19",
-		"react-dom": "catalog:react19"
+		"react-dom": "catalog:react19",
+		"zod": "catalog:"
 	}
 }
