@@ -21,6 +21,9 @@ catalogs:
     next-auth:
       specifier: ^5.0.0-beta
       version: 5.0.0-beta.27
+    pg:
+      specifier: ^8.15.6
+      version: 8.15.6
     postcss:
       specifier: ^8.5.3
       version: 8.5.3
@@ -130,6 +133,9 @@ importers:
       next:
         specifier: ^15.3.0
         version: 15.3.0(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+      pg:
+        specifier: 'catalog:'
+        version: 8.15.6
       postcss:
         specifier: 'catalog:'
         version: 8.5.3
@@ -232,7 +238,7 @@ importers:
         specifier: ^0.28.2
         version: 0.28.2
       pg:
-        specifier: ^8.15.6
+        specifier: 'catalog:'
         version: 8.15.6
       react:
         specifier: catalog:react19

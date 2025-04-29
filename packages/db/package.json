@@ -4,7 +4,7 @@
 	"private": true,
 	"exports": {
 		".": {
-			"default": "./index.ts"
+			"default": "./src/index.ts"
 		},
 		"./env": "./env.ts"
 	},
@@ -34,7 +34,7 @@
 		"@prisma/client": "6.6.0",
 		"@t3-oss/env-nextjs": "catalog:",
 		"kysely": "^0.28.2",
-		"pg": "^8.15.6",
+		"pg": "catalog:",
 		"react": "catalog:react19",
 		"react-dom": "catalog:react19",
 		"zod": "catalog:"

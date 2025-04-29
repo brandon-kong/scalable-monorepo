@@ -19,6 +19,7 @@
 		"@core/ui": "workspace:*",
 		"@t3-oss/env-nextjs": "catalog:",
 		"@tailwindcss/postcss": "catalog:",
+		"pg": "catalog:",
 		"next": "^15.3.0",
 		"postcss": "catalog:",
 		"react": "catalog:react19",
