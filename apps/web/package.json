@@ -10,7 +10,8 @@
 		"lint": "biome check . --write",
 		"check-types": "tsc --noEmit",
 		"format": "biome format --write",
-		"clean": "git clean -xdf .cache .turbo node_modules .next"
+		"clean": "git clean -xdf .cache .turbo node_modules .next",
+		"depcheck": "depcheck --ignores=\"@core/biome-config,@tailwindcss/postcss,pg,@types/react,@types/node,@types/react-dom,tailwindcss,postcss\" --oneline"
 	},
 	"dependencies": {
 		"@core/auth": "workspace:*",
@@ -19,7 +20,6 @@
 		"@core/ui": "workspace:*",
 		"@t3-oss/env-nextjs": "catalog:",
 		"@tailwindcss/postcss": "catalog:",
-		"next-auth": "catalog:",
 		"pg": "catalog:",
 		"next": "catalog:",
 		"postcss": "catalog:",
@@ -34,7 +34,7 @@
 		"@types/node": "^22.14.0",
 		"@types/react": "catalog:react19",
 		"@types/react-dom": "catalog:react19",
-		"dotenv-cli": "^8.0.0",
+		"depcheck": "catalog:",
 		"jiti": "catalog:",
 		"tailwindcss": "catalog:",
 		"typescript": "catalog:"
