@@ -12,7 +12,7 @@
 		"db:migrate": "prisma migrate dev",
 		"db:generate": "prisma generate",
 		"db:push": "prisma db push",
-		"clean": "git clean -xdf node_modules .turbo .cache",
+		"clean": "git clean -xdf node_modules .turbo .cache generated",
 		"format": "biome format --write .",
 		"lint": "biome check . --write",
 		"check-types": "tsc --noEmit",
