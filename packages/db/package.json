@@ -9,7 +9,7 @@
 	"scripts": {
 		"clean": "git clean -xdf node_modules .turbo .cache",
 		"format": "biome format --write .",
-		"lint": "biome check --write .",
+		"lint": "biome check . --write",
 		"check-types": "tsc --noEmit"
 	},
 	"devDependencies": {

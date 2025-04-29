@@ -12,7 +12,7 @@
 	"scripts": {
 		"clean": "git clean -xdf node_modules .turbo .cache",
 		"format": "biome format --write",
-		"lint": "biome check .",
+		"lint": "biome check . --write",
 		"check-types": "tsc --noEmit"
 	},
 	"devDependencies": {
