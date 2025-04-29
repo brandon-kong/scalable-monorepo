@@ -1,6 +1,6 @@
-import { auth } from "@core/auth";
 import { redirect } from "next/navigation";
 import type { ReactNode } from "react";
+import { auth } from "../../index";
 
 interface ProtectedRouteParams {
     redirect?: boolean;

@@ -1,7 +1,7 @@
 import NextAuth from "next-auth";
 
-import { authConfig } from "./auth.config";
-import { baseAuthConfig } from "./base.config";
+import { authConfig } from "./configs/auth.config";
+import { baseAuthConfig } from "./configs/base.config";
 
 const { handlers, auth, signIn, signOut } = NextAuth(authConfig);
 const edgeAuth = NextAuth(baseAuthConfig);

@@ -7,29 +7,32 @@
 		".": {
 			"default": "./src/index.ts"
 		},
-		"./configs/*": "./src/*.config.ts",
+		"./configs/*": "./src/configs/*.config.ts",
+		"./react/next": "./src/react/next/index.ts",
 		"./env": "./env.ts"
 	},
 	"scripts": {
 		"clean": "git clean -xdf node_modules .turbo .cache",
 		"format": "biome format --write",
 		"lint": "biome check . --write",
-		"check-types": "tsc --noEmit"
+		"check-types": "tsc --noEmit",
+		"depcheck": "depcheck"
 	},
 	"devDependencies": {
 		"@biomejs/biome": "catalog:",
 		"@core/biome-config": "workspace:*",
 		"@core/tsconfig": "workspace:*",
-		"@tailwindcss/postcss": "catalog:",
 		"@types/node": "^22.14.0",
 		"@types/react": "catalog:react19",
 		"@types/react-dom": "catalog:react19",
+		"depcheck": "catalog:",
 		"typescript": "5.8.2"
 	},
 	"dependencies": {
 		"@auth/core": "^0.39.0",
 		"@core/db": "workspace:*",
 		"@t3-oss/env-nextjs": "catalog:",
+		"next": "catalog:",
 		"kysely": "catalog:",
 		"next-auth": "catalog:",
 		"nodemailer": "^6.10.1",

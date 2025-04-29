@@ -9,6 +9,7 @@ catalog:
   '@tailwindcss/postcss': ^4.1.4
   postcss: ^8.5.3
   tailwindcss: ^4.1.4
+  depcheck: ^1.4.7
 
   # Auth
   next-auth: ^5.0.0-beta
@@ -21,6 +22,8 @@ catalog:
   "@t3-oss/env-nextjs": ^0.13.0
   zod: ^3.24.3
   jiti: ^2.4.2
+
+  next: ^15.3.1
 catalogs:
   react19:
     react: ^19.1.0

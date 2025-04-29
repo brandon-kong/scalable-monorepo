@@ -1,5 +1,5 @@
 import { type NextAuthConfig } from "next-auth";
-import { env } from "../env";
+import { env } from "../../env";
 import Nodemailer from "next-auth/providers/nodemailer";
 
 /* Supports the edge runtime for environments like NextJS middleware */

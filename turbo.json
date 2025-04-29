@@ -23,6 +23,9 @@
 		"clean": {
 			"dependsOn": ["^clean"]
 		},
+		"depcheck": {
+			"dependsOn": ["^depcheck"]
+		},
 		"db:migrate": {
 			"dependsOn": ["^db:migrate"]
 		},

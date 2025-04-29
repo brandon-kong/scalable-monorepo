@@ -1,5 +1,5 @@
+import { ProtectedRoute } from "@core/auth/react/next";
 import Typography from "@core/ui/Typography";
-import ProtectedRoute from "~/components/server/ProtectedRoute";
 
 export default function Home() {
     return (

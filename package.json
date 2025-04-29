@@ -11,7 +11,8 @@
 		"lint": "turbo run lint",
 		"clean": "turbo run clean",
 		"check-types": "turbo run check-types",
-		"format": "turbo run format"
+		"format": "turbo run format",
+		"depcheck": "turbo run depcheck"
 	},
 	"devDependencies": {
 		"@biomejs/biome": "catalog:",

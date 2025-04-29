@@ -21,7 +21,7 @@
 		"@tailwindcss/postcss": "catalog:",
 		"next-auth": "catalog:",
 		"pg": "catalog:",
-		"next": "canary",
+		"next": "catalog:",
 		"postcss": "catalog:",
 		"react": "catalog:react19",
 		"react-dom": "catalog:react19",
