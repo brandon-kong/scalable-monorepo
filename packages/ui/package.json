@@ -3,11 +3,9 @@
 	"version": "0.0.0",
 	"private": true,
 	"exports": {
-		"./*": [
-			"./src/*.tsx",
-			"./src/*.ts"
-		],
 		"./cn": "./classNames.ts",
+		"./form": "./src/form/index.tsx",
+		"./typography": "./src/typography/index.ts",
 		"./next/button": "./src/next/button/index.tsx"
 	},
 	"scripts": {
@@ -16,7 +14,7 @@
 		"lint": "biome check . --write",
 		"generate:component": "turbo gen react-component",
 		"check-types": "tsc --noEmit",
-		"depcheck": "depcheck --ignores=\"@core/biome-config,@tailwindcss/postcss,@types/react\""
+		"depcheck": "depcheck --ignores=\"@core/biome-config,@tailwindcss/postcss,@types/react,@types/node,@types/react-dom,@core/ui\""
 	},
 	"devDependencies": {
 		"@biomejs/biome": "catalog:",

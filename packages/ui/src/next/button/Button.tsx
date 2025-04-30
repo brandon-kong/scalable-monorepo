@@ -4,7 +4,7 @@ import { type VariantProps, cva } from "class-variance-authority";
 import React from "react";
 
 import cn from "@core/ui/cn";
-import Link, { type LinkProps } from "next/link";
+import type { LinkProps } from "next/link";
 
 const buttonVariants = cva(
     [

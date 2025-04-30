@@ -4,7 +4,7 @@
 		"esModuleInterop": true,
 		"skipLibCheck": true,
 		"target": "ES2022",
-		"lib": ["ES2022"],
+		"lib": ["es2022", "DOM", "DOM.Iterable"],
 		"allowJs": true,
 		"resolveJsonModule": true,
 		"moduleDetection": "force",
@@ -18,9 +18,12 @@
 		"noUncheckedIndexedAccess": true,
 		"checkJs": true,
 
-		"module": "Preserve",
-		"moduleResolution": "Bundler",
-		"noEmit": true
+		"noEmit": true,
+
+		"declaration": true,
+		"declarationMap": true,
+		"module": "NodeNext",
+		"moduleResolution": "NodeNext",
 	},
 	"exclude": ["node_modules", "build", "dist", ".next"]
 }

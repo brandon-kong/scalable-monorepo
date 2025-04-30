@@ -1,7 +1,6 @@
 import { ProtectedRoute, UnprotectedRoute } from "@core/auth/react/next";
-import Typography from "@core/ui/Typography";
-import { Button } from "@core/ui/next/button/Button";
-import Link from "next/link";
+import { Button } from "@core/ui/next/button";
+import Typography from "@core/ui/typography";
 import SignoutButton from "~/components/auth/signout";
 
 export default function Home() {
