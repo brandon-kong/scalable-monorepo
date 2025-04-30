@@ -5,9 +5,9 @@ const typographyVariants = cva("", {
     variants: {
         variant: {
             h1: "scroll-m-20 font-medium leading-none tracking-normal text-6xl text-balance",
-            h2: "scroll-m-20 text-4xl font-semibold first:mt-0",
-            h3: "scroll-m-20 text-2xl font-semibold tracking-tight",
-            h4: "scroll-m-20 text-xl font-semibold tracking-tight",
+            h2: "scroll-m-20 text-4xl font-medium first:mt-0",
+            h3: "scroll-m-20 text-2xl font-medium tracking-tight",
+            h4: "scroll-m-20 text-xl font-medium tracking-tight",
             p: "text-lg",
         },
     },

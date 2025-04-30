@@ -4,7 +4,7 @@ import Typography from "@core/ui/typography";
 
 export default function LoginPage() {
     return (
-        <main className={"p-20 max-w-lg mx-auto"}>
+        <main className={"p-20 max-w-2xl mx-auto flex flex-col gap-8"}>
             <Typography variant={"h2"}>Login</Typography>
             <InputField label={"Email"} showAsteriskIndicator />
             <InputField
