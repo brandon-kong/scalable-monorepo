@@ -7,7 +7,8 @@
 }
 
 @layer base {
-    body {
+    body,
+    button {
         font-family: var(--font-inter), ui-serif, Georgia, Cambria,
             "Times New Roman", Times, serif;
     }

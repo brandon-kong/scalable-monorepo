@@ -1,5 +1,6 @@
 import { ProtectedRoute, UnprotectedRoute } from "@core/auth/react/next";
 import Typography from "@core/ui/Typography";
+import { Button } from "@core/ui/next/button/Button";
 import Link from "next/link";
 import SignoutButton from "~/components/auth/signout";
 
@@ -19,21 +20,18 @@ export default function Home() {
                         The better way to schedule your meetings
                     </Typography>
                     <UnprotectedRoute>
-                        <Typography>
-                            You are not logged in. 
-                        </Typography>
-                        <Link href={'/api/auth/signin'}>
+                        <Typography>You are not logged in.</Typography>
+                        <Button disabled href={"/api/auth/signin"}>
                             Sign in
-                        </Link>
+                        </Button>
+                        <Link href={"/api/auth/signin"}>Sign in</Link>
                     </UnprotectedRoute>
                     <ProtectedRoute redirect={false}>
                         <Typography>
                             Welcome to the protected section of the application.
                             Only authorized users can see this content.
                         </Typography>
-                        <Typography>
-                            You are logged in. 
-                        </Typography>
+                        <Typography>You are logged in.</Typography>
                         <SignoutButton />
                     </ProtectedRoute>
                 </div>
