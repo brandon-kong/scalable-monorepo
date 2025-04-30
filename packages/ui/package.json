@@ -23,6 +23,7 @@
 		"typescript": "5.8.2"
 	},
 	"dependencies": {
+		"next": "catalog:",
 		"@tailwindcss/postcss": "catalog:",
 		"class-variance-authority": "^0.7.1",
 		"react": "catalog:react19",
