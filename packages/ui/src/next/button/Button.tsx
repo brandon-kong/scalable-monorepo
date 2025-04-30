@@ -8,37 +8,26 @@ import Link, { type LinkProps } from "next/link";
 
 const buttonVariants = cva(
     [
-        "disabled:cursor-not-allowed aria-disabled:cursor-not-allowed",
-        "cursor-pointer inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-xl text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive aria-disabled:opacity-50",
+        "select-none",
+        // Focus and Accessibility
+        "before:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-neutral-900",
+        "disabled:cursor-not-allowed aria-disabled:cursor-not-allowed disabled:opacity-50",
+        "w-full cursor-pointer inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-xl text-sm font-medium transition-all [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive aria-disabled:opacity-50",
     ],
     {
         variants: {
             variant: {
                 default: [
-                    // Typography
-                    "text-sm",
-                    "font-medium",
-
                     // Positioning
                     "relative",
-                    "flex",
-                    "w-full",
-                    "items-center",
-                    "justify-center",
-                    "gap-2",
 
                     // Borders and Background
                     "border",
                     "border-[transparent]",
                     "bg-neutral-900",
-                    "rounded-xl",
                     "bg-gradient-to-b",
                     "from-[#2c2c30]",
                     "to-[#1d1d20]",
-
-                    // Padding
-                    "px-4",
-                    "py-2",
 
                     // Colors and Effects
                     "text-white",
@@ -46,17 +35,6 @@ const buttonVariants = cva(
                     "hover:opacity-90",
                     "hover:bg-[#1f1f1f]",
                     "hover:shadow-none",
-
-                    // Focus and Accessibility
-                    "focus-visible:outline-none",
-                    "focus-visible:ring-2",
-                    "focus-visible:ring-offset-1",
-                    "focus-visible:ring-neutral-900",
-
-                    // Transitions
-                    "transition-all",
-                    "duration-150",
-                    "ease-in-out",
 
                     // Before pseudo-element
                     "before:pointer-events-none",
@@ -93,11 +71,12 @@ const buttonVariants = cva(
                     "dark:hover:bg-input/50",
                 ],
                 secondary: [
-                    // Colors and Effects
-                    "bg-secondary",
-                    "text-secondary-foreground",
-                    "shadow-xs",
-                    "hover:bg-secondary/80",
+                    "text-black",                   
+
+                    // Borders and Background
+                    "border",
+                    "border-black/20",
+                    "bg-[#F2F2F3]",
                 ],
                 ghost: [
                     // Colors and Effects
@@ -118,7 +97,7 @@ const buttonVariants = cva(
                 default: "h-12 rounded-xl px-6 has-[>svg]:px-4",
                 xs: "h-6 p-2 leading-none text-xs rounded-md",
                 sm: "h-8 rounded-md gap-2 px-3 has-[>svg]:px-2.5",
-                lg: "h-12 rounded-xl px-6 has-[>svg]:px-4",
+                lg: "text-md h-12 rounded-xl px-6 has-[>svg]:px-4",
                 icon: "size-9",
             },
         },
@@ -150,19 +129,19 @@ const Button = React.forwardRef<
     HTMLAnchorElement | HTMLButtonElement,
     ButtonProps
 >((props, forwardedRef) => {
-    const { variant, size, disabled } = props;
+    const { variant, size, ...passThroughProps } = props;
 
     // If pass an `href`-attr is passed it's `<a>`, otherwise it's a `<button />`
     const isLink = typeof props.href !== "undefined";
     const elementType = isLink ? "a" : "button";
 
     const element = React.createElement(elementType, {
-        ...props,
+        ...passThroughProps,
         type: !isLink ? props.type : undefined,
         ref: forwardedRef,
         className: cn(buttonVariants({ size, variant }), props.className),
         // if we click a disabled button, we prevent going through the click handler
-        onClick: disabled
+        onClick: props.disabled
             ? (e: React.MouseEvent<HTMLElement, MouseEvent>) => {
                   e.preventDefault();
               }

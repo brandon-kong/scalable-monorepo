@@ -21,8 +21,11 @@ export default function Home() {
                     </Typography>
                     <UnprotectedRoute>
                         <Typography>You are not logged in.</Typography>
-                        <Button size={"lg"} href={"/api/auth/signin"}>
+                        <Button href={"/api/auth/signin"}>
                             Sign in
+                        </Button>
+                        <Button variant={'secondary'}>
+                            Secondary Button
                         </Button>
                     </UnprotectedRoute>
                     <ProtectedRoute redirect={false}>
