@@ -71,7 +71,7 @@ const buttonVariants = cva(
                     "dark:hover:bg-input/50",
                 ],
                 secondary: [
-                    "text-black",                   
+                    "text-black",
 
                     // Borders and Background
                     "border",
