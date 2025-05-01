@@ -20,6 +20,8 @@
 		"@core/ui": "workspace:*",
 		"@t3-oss/env-nextjs": "catalog:",
 		"@tailwindcss/postcss": "catalog:",
+		"@hookform/resolvers": "catalog:",
+		"react-hook-form": "catalog:",
 		"next-auth": "catalog:",
 		"pg": "catalog:",
 		"next": "catalog:",

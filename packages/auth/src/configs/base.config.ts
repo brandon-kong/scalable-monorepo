@@ -19,5 +19,8 @@ export const baseAuthConfig = {
             clientSecret: env.GOOGLE_CLIENT_SECRET,
         })
     ],
+    pages: {
+        verifyRequest: "/auth/verify"
+    }
 } satisfies NextAuthConfig;
 
