@@ -87,6 +87,9 @@ const buttonVariants = cva(
                     "dark:hover:bg-accent/50",
                 ],
                 link: [
+                    "inline-block",
+                    "p-0",
+
                     // Typography
                     "text-primary",
                     "underline-offset-4",

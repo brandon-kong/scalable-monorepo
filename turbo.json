@@ -10,21 +10,9 @@
 		"lint": {
 			"dependsOn": ["^lint"]
 		},
-		"check-types": {
-			"dependsOn": ["^check-types"]
-		},
 		"dev": {
 			"cache": false,
 			"persistent": true
-		},
-		"format": {
-			"dependsOn": ["^format"]
-		},
-		"clean": {
-			"dependsOn": ["^clean"]
-		},
-		"depcheck": {
-			"dependsOn": ["^depcheck"]
 		},
 		"db:migrate": {
 			"dependsOn": ["^db:migrate"]
@@ -34,6 +22,10 @@
 		},
 		"db:generate": {
 			"dependsOn": ["^db:generate"]
-		}
+		},
+		"format": {},
+		"clean": {},
+		"depcheck": {},
+		"check-types": {}
 	}
 }
