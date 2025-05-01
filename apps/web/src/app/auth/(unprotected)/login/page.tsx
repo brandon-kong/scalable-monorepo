@@ -1,6 +1,6 @@
 "use client";
 
-import { InputField, Separator } from "@core/ui/form";
+import { EmailField, Separator } from "@core/ui/form";
 import { Button } from "@core/ui/next/button";
 import Typography from "@core/ui/typography";
 import { zodResolver } from "@hookform/resolvers/zod";
@@ -37,25 +37,25 @@ export default function LoginPage() {
     return (
         <main className={"p-20 max-w-2xl mx-auto flex flex-col gap-4"}>
             <Typography variant={"h2"}>Get back into the action</Typography>
-            {loading && "LOADING"}
-
             <FormProvider {...methods}>
                 <form
                     onSubmit={methods.handleSubmit(onSubmit)}
                     className={"space-y-4"}
                 >
-                    <InputField
+                    <EmailField
                         error="TEST"
                         label={"Email"}
                         {...register("email")}
                         showAsteriskIndicator
                     />
-                    <Button type={"submit"}>Send Link</Button>
+                    <Button disabled={loading} type={"submit"}>
+                        Send Link
+                    </Button>
                 </form>
             </FormProvider>
 
             <Separator>or</Separator>
-            <OAuthButtonGroup />
+            <OAuthButtonGroup disabled={loading} />
             <Typography variant={"p"} className={"text-sm text-center"}>
                 Don&apos;t have an account?{" "}
                 <Button
