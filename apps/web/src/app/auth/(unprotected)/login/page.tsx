@@ -52,7 +52,11 @@ export default function LoginPage() {
                         {...register("email")}
                         showAsteriskIndicator
                     />
-                    <Button disabled={loading} type={"submit"}>
+                    <Button
+                        disabled={loading}
+                        loading={loading}
+                        type={"submit"}
+                    >
                         Send Link
                     </Button>
                 </form>
