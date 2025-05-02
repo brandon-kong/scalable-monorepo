@@ -5,5 +5,6 @@ import { db } from "@core/db";
 
 export const authConfig = {
     adapter: KyselyAdapter(db),
+    session: { strategy: "jwt" },
     ...baseAuthConfig,
 } satisfies NextAuthConfig
