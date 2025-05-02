@@ -1,9 +1,10 @@
 "use client";
 
-import { cn } from "@core/ui/cn";
 import { cva } from "class-variance-authority";
 import React, { forwardRef, useId, useState } from "react";
 
+import { cn } from "@core/ui/cn";
+import { HintsOrErrors } from "./HintOrErrors";
 import { Label } from "./Label";
 import type { InputFieldProps, InputProps } from "./types";
 
@@ -128,6 +129,7 @@ export const InputField = forwardRef<HTMLInputElement, InputFieldProps>(
                     isFullWidth={inputIsFullWidth}
                     disabled={readOnly || disabled}
                 />
+                <HintsOrErrors hintErrors={hintErrors} fieldName={name} />
             </div>
         );
     },

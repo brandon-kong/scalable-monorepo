@@ -1,5 +1,6 @@
-import cn from "@core/ui/cn";
 import type React from "react";
+
+import cn from "@core/ui/cn";
 
 export function Label(props: React.JSX.IntrinsicElements["label"]) {
     const { className, htmlFor, ...restProps } = props;

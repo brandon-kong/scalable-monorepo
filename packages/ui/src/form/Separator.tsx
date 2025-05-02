@@ -1,5 +1,6 @@
-import { cn } from "@core/ui/cn";
 import type { ReactNode } from "react";
+
+import { cn } from "@core/ui/cn";
 
 interface SeparatorProps {
     className?: string;

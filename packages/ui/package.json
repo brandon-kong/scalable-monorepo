@@ -6,7 +6,8 @@
 		"./cn": "./classNames.ts",
 		"./form": "./src/form/index.tsx",
 		"./typography": "./src/typography/index.ts",
-		"./next/button": "./src/next/button/index.tsx"
+		"./next/button": "./src/next/button/index.tsx",
+		"./icons": "./src/icons.ts"
 	},
 	"scripts": {
 		"clean": "git clean -xdf node_modules .turbo .cache",
@@ -31,6 +32,8 @@
 		"@radix-ui/react-slot": "^1.2.0",
 		"@radix-ui/react-tooltip": "^1.2.4",
 		"@tailwindcss/postcss": "catalog:",
+		"lucide-react": "catalog:",
+		"react-hook-form": "catalog:",
 		"class-variance-authority": "^0.7.1",
 		"clsx": "^2.1.1",
 		"next": "catalog:",

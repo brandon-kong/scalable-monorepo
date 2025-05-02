@@ -23,7 +23,10 @@ export default function LoginPage() {
     });
 
     const methods = useForm<FormValues>({ resolver: zodResolver(formSchema) });
-    const { register } = methods;
+    const {
+        register,
+        formState: { errors },
+    } = methods;
 
     const onSubmit: SubmitHandler<FormValues> = async (data) => {
         setLoading(true);
@@ -43,7 +46,8 @@ export default function LoginPage() {
                     className={"space-y-4"}
                 >
                     <EmailField
-                        error="TEST"
+                        error={errors.email?.message}
+                        disabled={loading}
                         label={"Email"}
                         {...register("email")}
                         showAsteriskIndicator
