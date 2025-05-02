@@ -11,7 +11,7 @@
 		"check-types": "tsc --noEmit",
 		"format": "biome format --write",
 		"clean": "git clean -xdf .cache .turbo node_modules .next",
-		"depcheck": "depcheck --ignores=\"@core/biome-config,@tailwindcss/postcss,pg,@types/react,@types/node,@types/react-dom,tailwindcss,postcss\" --oneline"
+		"depcheck": "depcheck --ignores=\"@core/biome-config,@tailwindcss/postcss,pg,@types/react,@types/node,@types/react-dom,tailwindcss,postcss,~\" --quiet"
 	},
 	"dependencies": {
 		"@core/auth": "workspace:*",
