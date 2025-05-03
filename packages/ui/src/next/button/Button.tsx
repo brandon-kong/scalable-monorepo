@@ -113,7 +113,6 @@ export type ButtonBaseProps = {
     href?: string;
     variant?: VariantProps<typeof buttonVariants>["variant"];
     size?: VariantProps<typeof buttonVariants>["size"];
-    asChild?: boolean;
     disabled?: boolean;
     loading?: boolean;
 };
